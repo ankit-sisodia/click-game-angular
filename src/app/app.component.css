@@ -1,0 +1,97 @@
+.app-container{
+    text-align: center;
+    width: 75vw;
+    height: 75vh;
+    overflow-y: auto;
+    min-height: 400px;
+    margin: auto;
+    border: 1px solid #aaa;
+    box-shadow: 0 3px 3px #bbb;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0e2442;
+}
+
+.main-container{
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container.easy{
+    width: 185px;
+}
+
+.main-container.medium{
+    width: 250px;
+}
+
+.main-container.hard{
+    width: 380px;
+}
+
+.score-container{
+    /* border: 1px solid #bbb; */
+    padding: 10px;
+    /* width: max-content; */
+    display: flex;
+    float: right;
+    box-shadow: 0 1px 1px #ccc;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+.high-score-container{
+    /* border: 1px solid #bbb; */
+    padding: 10px;
+    /* width: max-content; */
+    display: flex;
+    float: right;
+    box-shadow: 0 1px 1px #ccc;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+.select-container{
+    padding: 15px;
+    margin: 10px;
+    display: block;
+    float: left;
+    box-shadow: 0 1px 1px #aaa;
+    width: 160px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.select-container input{
+    margin: 10px;
+}
+
+.timer{
+    display: inline-block;
+    background-color: #e21c1c;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.restart-btn{
+    position: absolute;
+    background-color: #144aab;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    box-shadow: 0 1px 1px #1436de96;
+    color: #fff;
+    float: right;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}

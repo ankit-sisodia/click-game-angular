@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-container">
+    <div>
+            <div class="timer"> Timer: {{timer}}</div>
+            <div class="restart-btn" (click)="restartHandler()">Restart</div>
+    </div>
+   
+    <div class="select-container">
+            <input type="radio" (click)="setRadio('easy')" [checked]=true name="difficulty" value="Easy"> Easy<br>
+            <input type="radio" (click)="setRadio('medium')" name="difficulty" value="Medium"> Medium<br>
+            <input type="radio" (click)="setRadio('hard')" name="difficulty" value="Hard"> Hard<br><br>
+    </div>
+    <div class="main-container" [ngClass]="diff==='easy'? 'easy': diff==='medium'? 'medium': 'hard'">
+        <app-board-cell (clicked)="clickedHandler($event)" [highlight]="highlight===i? true: false" *ngFor="let item of items; let i = index"></app-board-cell>
+    </div>
+    <div style="display: grid; float: right;">
+        <div class="high-score-container">High Score: {{currentHighScore}}</div>            
+        <div class="score-container">Total Score: {{totalScore}}</div>
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>
