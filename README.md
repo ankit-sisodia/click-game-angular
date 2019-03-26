@@ -1,6 +1,8 @@
-# Note App
+# Click Game App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+
+Run `npm install`
 
 ## Development server
 
