@@ -8,18 +8,18 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class BoardCellComponent implements OnInit {
 
   @Input() highlight;
-  @Output('clicked') clicked = new EventEmitter(); 
+  @Output('clicked') clicked = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  clickHandler(){
-    if( this.highlight ){
-      this.clicked.emit({add:true});
+  clickHandler() {
+    if ( this.highlight ) {
+      this.clicked.emit({add: true});
     } else {
-      this.clicked.emit({add:false});
+      this.clicked.emit({add: false});
     }
   }
 
